@@ -1,0 +1,17 @@
+[tool.black]
+line-length = 120
+target_version = ['py37']
+skip-string-normalization = true
+# The plugin does NOT currently consider the black settings include and exclude, so if you have certain Python files
+# which you do not use with black and have told it to ignore, you will also need to tell flake8 to ignore them
+exclude = '''
+(
+    .mypy_cache |
+    .pytest_cache |
+    .configs |
+    .data |
+    venv |
+    .flake8 |
+    .gitignore
+    )
+'''

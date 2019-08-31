@@ -1,0 +1,11 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    venv,
+    configs,
+    data
+
+max-line-length = 120
+
+import-order-style = pep8
